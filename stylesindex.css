@@ -1,0 +1,358 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    overflow-x: hidden; /* Para evitar el scroll horizontal por la animación */
+}
+
+/* Header con el logo y navegación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10; /* Para que esté encima del fondo */
+}
+
+/* Imagen de fondo en movimiento */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background-image: url('src/Imagenes/mipymes-2023.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Se queda detrás del contenido */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2C3E50;
+    color: white;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura sobre el fondo */
+    z-index: 1;
+}
+
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF6347; /* Cambiar el color al pasar el ratón */
+}
+
+/* Hacer el menú responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Contenedor principal */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+}
+/*InformaciónContacto*/
+.InformaciónContacto {
+    width: 30%;
+}
+
+.InformaciónContacto h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.InformaciónContacto p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.InformaciónContacto a {
+    text-decoration: none;
+    color: #2980B9; /* Color correo */
+}
+
+.InformaciónContacto a:hover {
+    text-decoration: underline;
+}
+
+/*Servicios */
+.Servicios {
+    width: 30%;
+}
+
+.Servicios h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.Servicios ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.Servicios ul li {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.Servicios ul li::before {
+    content: "•"; /* Punto para la lista */
+    color: #2980B9; /* Color azul */
+    margin-right: 10px;
+}
+
+/* redes */
+.redes {
+    width: 30%;
+}
+
+.redes h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.redes ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.redes ul li {
+    margin: 5px 0;
+}
+
+.redes ul li a {
+    text-decoration: none;
+    color: #2980B9; /* Azul */
+    font-size: 1.1em;
+}
+
+.redes ul li a:hover {
+    text-decoration: underline;
+}
+
+.store-buttons {
+    display: flex; /* Usa flexbox para organizar los elementos en una fila */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    gap: 0px; /* Espacio entre los botones, puedes ajustar este valor */
+    margin: 20px 0; /* Espaciado arriba y abajo del contenedor */
+
+    color: #ac40ab;
+    font-size: 55px;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    box-shadow: 7px 7px 10px #0b0c0e, -7px -7px 10px #6d6c6c;
+    margin-top: 160px;
+}
+
+.main-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.main-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    margin-left: 40px; /* Espacio a la izquierda */
+    margin-right: 40px; /* Espacio a la derecha */
+}
+
+.main-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    margin-left: 40px; /* Espacio a la izquierda */
+    margin-right: 40px; /* Espacio a la derecha */
+}
+
+/* Hacer el texto más pequeño en pantallas pequeñas */
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 2.5rem;
+    }
+    .main-content p {
+        font-size: 1.2rem;
+    }
+}
+
+.store-buttons a {
+    display: flex; /* Asegúrate de que los enlaces se comporten como flex */
+    justify-content: center; /* Centra la imagen dentro del enlace */
+    align-items: center; /* Centra la imagen dentro del enlace */
+    width: 60px; /* Ajusta el tamaño del área del botón según sea necesario */
+    height: 60px; /* Ajusta el tamaño del área del botón según sea necesario */
+
+    margin: 0 10px;
+}
+
+.store-buttons img {
+    width: 63px;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 50pc;
+}
+
+.store-buttons a:hover img {
+    transform: scale(1.1); /* Efecto de ampliación al pasar el ratón */
+}
+
+.interactive-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.mipymes {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0.6;
+}
+
+.mipymes:hover {
+    opacity: 1;
+}
+
+.mipymes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease;
+}
+
+.mipymes:hover {
+    transform: scale(1.05);
+}
+
+.mipymes:hover img {
+    filter: grayscale(0%);
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.description h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.description p {
+    font-size: 0.9rem;
+}
+
+/* Ajustes responsive para las tarjetas */
+@media (max-width: 768px) {
+    .interactive-section {
+        flex-direction: column;
+    }
+
+    .mipymes {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Estilo del botón */
+.boxed-btn4 {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.2); 
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #101113, -6px -6px 6px #585252;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    width: 25%;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.boxed-btn4:hover,
+.boxed-btn4:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+    letter-spacing: 1px;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Estilos responsive para el pie de página */
+@media (max-width: 768px) {
+    .InformaciónContacto, .Servicios, .redes {
+        text-align: center;
+    }
+}

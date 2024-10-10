@@ -1,0 +1,136 @@
+/* Ajuste general para centrar el contenido */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('src/Imagenes/mipymes-2023.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Añadiendo overlay transparente */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura sobre el fondo */
+    z-index: 1;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background: rgba(99, 94, 94, 0.7); /* Fondo semitransparente */
+    font-family: 'Nunito', sans-serif;
+    padding: 5px 25px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px #0b0c0e, -4px -4px 20px #fff;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Asegura que el formulario esté por encima del overlay */
+}
+/* Estilos para los campos del formulario */
+.form-container .form-horizontal .form-group {
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.form-container .form-horizontal .form-group label {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.form-container .form-horizontal .form-control {
+    color: #333;
+    background: #ecf0f3;
+    font-size: 15px;
+    height: 40px;
+    padding: 6px 20px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #fff;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.form-container .form-horizontal .form-control:focus {
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #fff;
+    outline: none;
+}
+
+.form-container .form-horizontal .form-control::placeholder {
+    color: #808080;
+    font-size: 14px;
+}
+
+/* Estilos para el botón */
+.form-container .form-horizontal .btn {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #101113, -6px -6px 6px #585252;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde delgado semitransparente */
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+
+.form-container .form-horizontal .btn:hover,
+.form-container .form-horizontal .btn:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo más claro al pasar el mouse */
+    box-shadow: none;
+    outline: none;
+}
+
+/* Estilos adicionales */
+.signup-link {
+    margin-top: 15px;
+}
+
+.signup-link a {
+    color: blue;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}

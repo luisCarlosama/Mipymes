@@ -1,0 +1,265 @@
+/*estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #474444; /* Gris claro para el fondo */
+    color: #000000;
+}
+
+/* Header estilo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B0000; /* Rojo oscuro */
+    padding: 10px 30px;
+    box-sizing: border-box;
+    max-width: 100%;
+    flex-wrap: wrap;
+    color: white;
+    border-bottom-left-radius: 60px; 
+    border-bottom-right-radius: 60px; 
+   
+}
+
+header .logo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #FF6F61;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Espacio entre los elementos del menú */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.user-inicio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.user-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-info img {
+    width: 40px; /* Tamaño del ícono */
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    }
+
+    /* Coloca logo y menú en dos columnas */
+    .logo, nav {
+        flex-basis: 50%; /* Cada uno toma el 50% del ancho */
+        text-align: center; /* Centra el texto en ambas columnas */
+    }
+
+    nav ul {
+        justify-content: center; /* Centra el menú de navegación */
+    }
+
+    /* Mantener el user-inicio debajo */
+    .user-inicio {
+        margin-top: 10px;
+        width: 50%; /* Toma el ancho completo */
+        justify-content: center; /* Centra el nombre de usuario y el ícono */
+    }
+}
+/* Main Content Styles */
+main {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff5f5; 
+}
+
+.welcome-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Image Section */
+.image-section {
+    margin-top: 50px;
+}
+
+.image-section img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+.container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mínima */
+    padding: 20px; /* Opcional, para añadir espacio interno */
+    background-color: white; /* Opcional, para resaltar el contenido */
+    border-radius: 10px; /* Si quieres bordes redondeados */
+}
+
+
+/*InformaciónContacto*/
+.InfomaciónContacto {
+    width: 30%;
+}
+
+.InfomaciónContacto h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.InfomaciónContacto p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.InfomaciónContacto a {
+    text-decoration: none;
+    color: #2980B9; /* Color correo */
+}
+
+.InfomaciónContacto a:hover {
+    text-decoration: underline;
+}
+
+/*Servicios */
+.Servicios {
+    width: 30%;
+}
+
+.Servicios h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.Servicios ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.Servicios ul li {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.Servicios ul li::before {
+    content: "•"; /* Punto para la lista */
+    color: #2980B9; /* Color azul */
+    margin-right: 10px;
+}
+
+/* redes */
+.redes {
+    width: 30%;
+}
+
+.redes h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.redes ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.redes ul li {
+    margin: 5px 0;
+}
+
+.redes ul li a {
+    text-decoration: none;
+    color: #2980B9; /* Azul */
+    font-size: 1.1em;
+}
+
+.redes ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2C3E50;
+    color: white;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+.boxed-btn4{
+    background: #9e4141;
+    font-size: 16px; 
+    font-weight: 500;
+    border: 1px solid transparent;
+    color: #f3ebea;
+    padding: 15px 45px;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.logo {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
+    font-size: 3rem; /* Tamaño grande para destacar el logo */
+    color: #FF6F61; /* Un color llamativo como coral */
+    text-align: center; /* Centrar el logo */
+    text-transform: uppercase; /* Todo en mayúsculas para destacar más */
+    letter-spacing: 5px; /* Espaciado entre letras */
+    font-weight: 600; /* Peso de la fuente */
+    padding: 20px; /* Espaciado interno */
+    border-bottom: 3px solid #FF6F61; /* Una línea decorativa debajo */
+    margin-bottom: 20px;
+}
+
+.logo:hover {
+    color: #FF3B2E; /* Efecto hover para más interactividad */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
